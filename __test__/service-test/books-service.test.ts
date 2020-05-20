@@ -181,9 +181,9 @@ describe('createNewBook Function', () => {
             title: 'The Diary of Anne Frank',
             author: '3',
             genre: '2',
-            totalRatings: '0',
-            isAvailable: true,
-            currentStatus: '1'
+            totalratings: '0',
+            isavailable: true,
+            currentstatus: '1'
         }; 
 
         const result = await BooksService.createNewBook(newBook);
@@ -201,9 +201,9 @@ describe('createNewBook Function', () => {
             title: 'The Diary of Anne Frank',
             author: '3',
             genre: '2',
-            totalRatings: '0',
-            isAvailable: true,
-            currentStatus: '1'
+            totalratings: '0',
+            isavailable: true,
+            currentstatus: '1'
         };
 
         const result = await BooksService.createNewBook(newBook);
@@ -220,9 +220,9 @@ describe('createNewBook Function', () => {
             title: 'The Diary of Anne Frank',
             author: "3",
             genre: "2",
-            totalRatings: "0",
-            isAvailable: true,
-            currentStatus: '1',
+            totalratings: "0",
+            isavailable: true,
+            currentstatus: '1',
             publisher: 'Penguin Press'
         };
 
@@ -239,14 +239,13 @@ describe('createNewBook Function', () => {
         const newBook = {
             title: 'Diary of Anne Frank',
             author: 3,
-            totalRatings: 0,
-            isAvailable: true,
-            currentStatus: 1
+            totalratings: 0,
+            isavailable: true,
+            currentstatus: 1
         };
 
         try {
             await BooksService.createNewBook(newBook);
-            fail('BooksService.createNewBook did not throw expected error');
         } catch (err) {
             expect(err).toBeDefined();
         }

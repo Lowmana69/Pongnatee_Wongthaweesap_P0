@@ -140,11 +140,11 @@ describe('createNewMovie', () => {
 
         const newMovie = {
             title: 'Diary of Tootsie',
-            yearRelease: '7',
+            yearrelease: '7',
             genre: '4',
-            totalRatings: '0',
-            isAvailable: true,
-            currentStatus: '1'
+            totalratings: '0',
+            isavailable: true,
+            currentstatus: '1'
         };
 
         const result = await MoviesService.createNewMovie(newMovie);
@@ -159,11 +159,11 @@ describe('createNewMovie', () => {
         const newMovie = {
             id: '23',
             title: 'Diary of Tootsie',
-            yearRelease: '7',
+            yearrelease: '7',
             genre: '4',
-            totalRatings: '0',
-            isAvailable: true,
-            currentStatus: '1'
+            totalratings: '0',
+            isavailable: true,
+            currentstatus: '1'
         };
 
         const result = await MoviesService.createNewMovie(newMovie);
@@ -176,11 +176,11 @@ describe('createNewMovie', () => {
 
         const newMovie = {
             title: 'Diary of Tootsie',
-            yearRelease: '7',
+            yearrelease: '7',
             genre: '4',
-            totalRatings: '0',
-            isAvailable: true,
-            currentStatus: '1',
+            totalratings: '0',
+            isavailable: true,
+            currentstatus: '1',
             origin: 'Thailand'
         };
 
@@ -196,10 +196,10 @@ describe('createNewMovie', () => {
 
         const newMovie = {
             title: 'Diary of Tootsie',
-            yearRelease: 3,
-            totalRatings: 0,
-            isAvailable: true,
-            currentStatus: 1
+            yearrelease: 3,
+            totalratings: 0,
+            isavailable: true,
+            currentstatus: 1
         };
 
         try {
@@ -242,7 +242,7 @@ describe('patchMovie Function', () => {
         const patchMovie = {
             title: 'Jaws',
             genre: 17,
-            yearRelease: 5
+            yearrelease: 5
         };
 
         try {

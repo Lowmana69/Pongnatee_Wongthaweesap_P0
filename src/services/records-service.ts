@@ -45,7 +45,7 @@ export function createNewRecord (record: any): Promise<Record> {
     const params = (record.mediatitle,
         record.category, record.handler,
         record.recommendation);
-        
+
 console.log(newRecord);
     if (params) {
         return recordsDao.createNewRecord(newRecord);

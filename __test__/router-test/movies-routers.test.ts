@@ -146,11 +146,11 @@ describe(`'POST' Method /movies`, () => {
         
         const newMovie = {
             title: 'Godzilla 2000',
-            yearRelease: 6,
+            yearrelease: 6,
             genre: 4,
-            totalRatings: 0,
-            isAvailable: true,
-            currentStatus: 1
+            totalratings: 0,
+            isavailable: true,
+            currentstatus: 1
         };
 
         await request(app)
@@ -165,7 +165,7 @@ describe(`'POST' Method /movies`, () => {
         
         const newMovie = {
             title: 'Godzilla 2000',
-            yearRelease: 6,
+            yearrelease: 6,
             genre: 'Thriller'
         };
 
@@ -186,11 +186,11 @@ describe(`'PATCH' Method /movies`, () => {
         const updatedMovie = {
             id: 75,
             title: 'Godzilla',
-            yearRelease: 6,
+            yearrelease: 6,
             genre: 4,
-            totalRatings: 0,
-            isAvailable: false,
-            currentStatus: 2
+            totalratings: 0,
+            isavailable: false,
+            currentstatus: 2
         };
 
         await request(app)
@@ -205,7 +205,7 @@ describe(`'PATCH' Method /movies`, () => {
         
         const updatedMovie = {
             title: 'Godzilla 2000',
-            yearRelease: 6,
+            yearrelease: 6,
             genre: 'Thriller'
         };
 

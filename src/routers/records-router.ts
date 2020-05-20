@@ -129,6 +129,7 @@ recordsRouter.post('', (request, response, next) => {
             response.json(newRecord);
             next();
         }).catch(err => {
+            console.log(err);
             response.sendStatus(500);
             next();
         });

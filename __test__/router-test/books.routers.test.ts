@@ -148,9 +148,9 @@ describe(`'POST' Method /books`, () => {
             title: 'Diary of Anne Frank',
             author: 3,
             genre: 2,
-            totalRatings: 0,
-            isAvailable: true,
-            currentStatus: 1
+            totalratings: 0,
+            isavailable: true,
+            currentstatus: 1
         };
 
         await request(app)
@@ -188,9 +188,9 @@ describe(`'PATCH' Method /books`, () => {
             title: 'Diary of Anne Frank',
             author: 4,
             genre: 5,
-            totalRatings: 12,
-            isAvailable: true,
-            currentStatus: 1
+            totalratings: 12,
+            isavailable: true,
+            currentstatus: 1
         };
 
         await request(app)

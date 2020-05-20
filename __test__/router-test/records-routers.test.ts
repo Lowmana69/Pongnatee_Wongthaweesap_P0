@@ -177,7 +177,7 @@ describe(`'POST' Method /records`, () => {
         
         const newRecord = {
             mediatitle: 'Journey To The West',
-            totalRatings: 12,
+            totalratings: 12,
             category: 1,
             recommedation: 3
         };
@@ -194,7 +194,7 @@ describe(`'POST' Method /records`, () => {
         
         const newRecord = {
             mediatitle: 'Journey To The West',
-            totalRatings: 12,
+            totalratings: 12,
             category: 3,
             recommedation: 3
         };
